@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase-Crud</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/pulse/bootstrap.min.css" integrity="sha384-L7+YG8QLqGvxQGffJ6utDKFwmGwtLcCjtwvonVZR/Ba2VzhpMwBz51GaXnUsuYbj" crossorigin="anonymous">
+</head>
+<body>
+    <main>
+        <div class="form">
+            <form id="task-form">
+                <div class="title">
+                    <strong><label for="title">Title:</label></strong>
+                    <input autocomplete="off" type="text" placeholder="Task Title" id="task-title">
+                </div>
+            
+                <div class="description">
+                    <strong><label for="description">Description: </label></strong>
+                    <textarea id="task-description" cols="30" placeholder="Task Description"></textarea>
+                </div>
+            
+                <button id="btn-task-save">Save</button>
+            </form>
+        </div>
+        <div id="tasks-container"></div>
+    </main>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
